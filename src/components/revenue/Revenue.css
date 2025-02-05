@@ -1,0 +1,169 @@
+.revenue-panel {
+  padding: 0 20px 0 20px;
+  background-color: white;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  min-height: 598px;
+  border-radius: 5px;
+}
+.revenue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+}
+
+.rev-header-title {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mdi-dots-vertical {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+.mdi-dots-vertical:hover {
+  color: #555;
+}
+
+.week-summary {
+  display: flex;
+}
+
+.current-week,
+.previous-week {
+  width: 100%;
+  height: 120px;
+  background: #f8f9fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-week p,
+.previous-week p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.current-week h2,
+.previous-week h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.blue-dot {
+  background-color: #727cf5;
+}
+
+.green-dot {
+  background-color: #0acf97;
+}
+.revenue-chart {
+  position: relative;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+}
+
+.revenue-chart img {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  display: block;
+}
+
+.chart-info {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  z-index: 10;
+  margin-top: 10px;
+}
+.earning-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.revenue-desc {
+  margin-bottom: 20px;
+  color: #8a969c;
+  font-size: 13px;
+}
+
+.view-statements {
+  background: white;
+  color: white;
+  border: 1px solid #727cf5;
+  color: #727cf5;
+  padding: 10px 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.view-statements:hover {
+  background: #727cf5;
+  color: white;
+}
+.view-statements .arrow {
+  margin: 0 15px;
+}
+
+@media (max-width: 1850px) {
+  .chart-info {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; /* 창이 줄어들어도 내부에 유지 */
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  .chart-info {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; /* 창이 줄어들어도 내부에 유지 */
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .week-summary {
+    flex-direction: column;
+  }
+}

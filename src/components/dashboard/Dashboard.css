@@ -1,0 +1,27 @@
+.dashboard-content {
+  display: flex;
+  align-items: stretch;
+  padding: 0 24px 0 24px;
+  gap: 24px;
+}
+.chart-panel {
+  flex: 3;
+}
+
+.metrics-panel {
+  flex: 2;
+}
+
+@media (max-width: 980px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
+
+  .metrics-panel {
+    order: 1;
+  }
+
+  .chart-panel {
+    order: 2;
+  }
+}

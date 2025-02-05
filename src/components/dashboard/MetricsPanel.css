@@ -1,0 +1,115 @@
+.metrics-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 24px;
+  background-color: #f0f3f8;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-width: 180px;
+  height: auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8a969c;
+  align-self: flex-start;
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 22px;
+  color: #6c757d;
+}
+
+.card p {
+  font-size: 14px;
+  color: #777;
+}
+.card-icon {
+  font-size: 24px;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  color: #727cf5;
+  background-color: #dddefc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.positive {
+  color: #0acf97;
+}
+
+.negative {
+  color: #fa5c7c;
+}
+
+.change-text {
+  font-size: 16px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.change-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.change-icon {
+  font-size: 14px;
+}
+
+.up {
+  color: #0acf97;
+}
+
+.down {
+  color: #fa5c7c;
+}
+.since-text {
+  color: #8a969c;
+  font-weight: 500;
+}
+
+@media (max-width: 1700px) {
+  .change-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .card h2 {
+    margin-top: 22px;
+  }
+}
+@media (max-width: 575px) {
+  .metrics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

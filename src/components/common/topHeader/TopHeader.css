@@ -1,0 +1,71 @@
+@import "/node_modules/@mdi/font/css/materialdesignicons.min.css";
+
+.navigation {
+  background-color: #fff;
+  padding: 0px 12px;
+  width: calc(100% - 310px);
+  box-sizing: border-box;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 70px;
+  padding: 15px;
+}
+.button-toggle-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.button-toggle-menu .mdi-menu {
+  font-size: 24px;
+  line-height: 1;
+  color: #6c757d;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  height: 70px;
+}
+.top-logo-sm {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .search-bar-wrapper {
+    display: none;
+  }
+
+  .toggle-search-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 1150px) {
+  .nav-right {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  .top-logo-sm {
+    display: block;
+  }
+}

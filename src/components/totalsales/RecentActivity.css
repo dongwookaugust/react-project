@@ -1,0 +1,141 @@
+.recent-activity {
+  background-color: white;
+  border-radius: 5px;
+  max-height: 556px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 67px;
+  padding: 25px;
+}
+
+.header-title {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mdi-dots-vertical {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+.mdi-dots-vertical:hover {
+  color: #555;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0 25px;
+  margin-bottom: 25px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.activity-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.activity-list::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.activity-list.scrolling::-webkit-scrollbar-thumb {
+  opacity: 1;
+  visibility: visible;
+}
+
+.activity-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+.activity-list li::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 1px;
+  height: 90%;
+  background-color: #f1f1f1;
+}
+
+.activity-list li:last-child::after {
+  display: none;
+}
+
+.activity-list li:last-child {
+  border-bottom: none;
+}
+
+.activity-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sold {
+  background-color: #d8eef3;
+  color: #2ca7c9;
+}
+
+.market {
+  background-color: #e3e5fa;
+  color: #727cf5;
+}
+
+.message {
+  background-color: #d8eef3;
+  color: #39afd1;
+}
+
+.error {
+  background-color: #e3e5fa;
+  color: #727cf5;
+}
+
+.activity-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+
+.activity-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(57, 175, 209);
+  line-height: 1.8;
+}
+
+.activity-content {
+  font-size: 14px;
+  color: #6c757d;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+.activity-time {
+  font-size: 11px;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}

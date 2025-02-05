@@ -1,0 +1,81 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  color: #6c757d;
+  align-items: center;
+  padding: 10px;
+  padding-left: 25px;
+  line-height: 50px;
+  width: 99%;
+  height: 75px;
+}
+
+.dashboard-header h4 {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-picker-container {
+  display: flex;
+  align-items: center;
+  background: #f0f3f8;
+  border-radius: 5px;
+  border: 1px solid #f0f3f8;
+  overflow: hidden;
+  height: 40px;
+}
+
+.date-picker {
+  border: none;
+  font-size: 14px;
+  color: #6c757d;
+  background-color: #eef1f6;
+  text-align: start;
+  padding: 10px;
+  outline: none;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+}
+
+.disabled-btn {
+  background: transparent;
+  color: #6c757d;
+  border: none;
+  cursor: default;
+  pointer-events: none;
+  border-radius: 0 5px 5px 0 !important;
+  height: 100%;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.icon-btn:hover {
+  background: #5a54e6;
+}
+@media (max-width: 730px) {
+  .date-picker-container,
+  .icon-btn {
+    display: none;
+  }
+}

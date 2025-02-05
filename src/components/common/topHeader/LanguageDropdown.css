@@ -1,0 +1,90 @@
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+}
+
+.language-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.language-btn:hover {
+  color: #333;
+}
+
+.language-btn .flag {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+  margin-right: 8px;
+  height: 22px;
+}
+.language-btn .chevron {
+  font-size: 12px;
+  margin-left: 3px;
+  color: #999;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 5px;
+  width: 150px;
+  padding: 8px 0;
+  list-style: none;
+  margin-top: 5px;
+  z-index: 999;
+  display: none;
+}
+
+.dropdown-menu.visible {
+  display: block;
+}
+
+.dropdown-menu.hidden {
+  display: none;
+}
+
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdown-menu li .flag {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.dropdown-menu li .lang-name {
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-menu li:hover {
+  background: #f5f5f5;
+}
+@media (max-width: 1150px) {
+  .lang-name {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .chevron {
+    display: none;
+  }
+}
